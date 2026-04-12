@@ -15,7 +15,7 @@ from trl import SFTTrainer
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="QLoRA fine-tuning pipeline")
-    parser.add_argument("--model_id", type=str, default="meta-llama/Llama-2-7b-hf")
+    parser.add_argument("--model_id", type=str, default="TinyLlama/TinyLlama-1.1B-Chat-v1.0")
     parser.add_argument("--train_file", type=str, default="data/train.jsonl")
     parser.add_argument("--output_dir", type=str, default="lora_adapter")
     parser.add_argument("--num_train_epochs", type=int, default=3)
