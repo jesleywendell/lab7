@@ -2,7 +2,10 @@ import json
 import os
 import random
 
+from dotenv import load_dotenv
 from openai import OpenAI
+
+load_dotenv()
 
 DOMAIN = "Machine Learning and Artificial Intelligence"
 N_SAMPLES = 60
